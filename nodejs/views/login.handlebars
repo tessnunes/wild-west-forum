@@ -1,0 +1,7 @@
+<h2>Login</h2>
+{{#if error}}<p class="error">{{error}}</p>{{/if}}
+<form method="POST" action="/login" class="card">
+  <label>Username <input name="username"></label>
+  <label>Password <input type="password" name="password"></label>
+  <button>Login</button>
+</form>

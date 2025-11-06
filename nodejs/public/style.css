@@ -1,0 +1,13 @@
+*{box-sizing:border-box} body{font-family:system-ui,Arial,sans-serif;margin:0;background:#f8fafc;color:#0f172a}
+.container{max-width:900px;margin:2rem auto;padding:0 1rem}
+.nav{display:flex;gap:1rem;align-items:center;padding:1rem;background:#0ea5e9;color:white}
+.nav a{color:white;text-decoration:none;font-weight:600}
+.nav .who{margin-left:auto}
+.nav .logout{display:inline}
+.card{display:grid;gap:.75rem;max-width:420px;padding:1rem;background:white;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,.08);margin:1rem 0}
+.card input,.card textarea{width:100%;padding:.6rem;border:1px solid #cbd5e1;border-radius:8px}
+button{padding:.6rem 1rem;border:0;border-radius:10px;background:#0ea5e9;color:white;font-weight:700;cursor:pointer}
+.error{color:#b91c1c;background:#fee2e2;border:1px solid #fecaca;padding:.5rem .75rem;border-radius:8px;max-width:420px}
+.comments{list-style:none;padding:0;margin:0;display:grid;gap:1rem}
+.comment{background:white;border-radius:12px;padding:1rem;box-shadow:0 6px 18px rgba(2,6,23,.08)}
+.footer{margin:3rem 0 2rem;text-align:center;color:#475569}

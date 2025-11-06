@@ -1,0 +1,11 @@
+<h2>All Comments</h2>
+{{#if comments.length}}
+<ul class="comments">
+  {{#each comments}}
+  <li class="comment">
+    <div><strong>{{author}}</strong> at {{formatDate createdAt}}</div>
+    <p>{{text}}</p>
+  </li>
+  {{/each}}
+</ul>
+{{else}}<p>No comments yet.</p>{{/if}}
