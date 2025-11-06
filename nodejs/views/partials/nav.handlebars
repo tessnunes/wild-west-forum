@@ -1,12 +1,16 @@
-<nav class="nav">
+<nav>
   <a href="/">Home</a>
   <a href="/comments">Comments</a>
+
   {{#if user}}
-    <span class="who">Logged in as <strong>{{user}}</strong></span>
-    <a href="/comment/new">New Comment</a>
-    <form class="logout" action="/logout" method="POST"><button>Logout</button></form>
+    <span>Logged in as {{user}}</span>
+    <form method="POST" action="/logout" style="display:inline;">
+      <button type="submit">Logout</button>
+    </form>
   {{else}}
-    <a href="/login">Login</a>
     <a href="/register">Register</a>
+    <a href="/login">Login</a>
   {{/if}}
 </nav>
+<hr>
+

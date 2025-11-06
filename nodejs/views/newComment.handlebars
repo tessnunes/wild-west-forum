@@ -1,8 +1,6 @@
 <h2>New Comment</h2>
-{{#if error}}<p class="error">{{error}}</p>{{/if}}
-<form method="POST" action="/comment" class="card">
-  <label>Your comment
-    <textarea name="text" rows="4" placeholder="Say something…"></textarea>
-  </label>
-  <button>Post</button>
+<form method="POST" action="/comment">
+  <textarea name="text" rows="5" cols="40" required></textarea><br>
+  <button type="submit">Submit</button>
 </form>
+

@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    build: ./nodejs
+    container_name: wildwest-node
+    ports:
+      - "3000:3000"
+    networks:
+      - wildwestnet
+
+  nginx:
+    build: ./nginx
+    container_name: wildwest-nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - web
+    networks:
+      - wildwestnet
+
+networks:
+  wildwestnet:
+    driver: bridge
+
