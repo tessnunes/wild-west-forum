@@ -30,7 +30,7 @@ Running Locally
 git clone <your-repo-url>
 2. Build and run containers:
 sudo docker compose up --build
-3. Access the app at: http://localhost:8181
+3. Access the app at: http://165.227.106.222:8181
 4. Stop the containers with:
 sudo docker compose down
 Deploying on a Remote Server (DigitalOcean)
